@@ -77,32 +77,32 @@ public class Game {
     public void play(){
 		Scanner in = new Scanner(System.in);
 		boolean goON=true;
-    	int count=0;
+    	int count=1;
 		while(goON){
 
 	        while ( true ) {
 	//    		显示该房间的对话
 
-	        	System.out.println("你在" + currentRoom);
+	        	System.out.println("***"+"你在" +currentRoom+"***");
 	    		Character chara;
 	    		chara=character.get(currentRoom);
-	    		chara.print();
+	    			chara.print();
 	    		String answer=in.nextLine();
 	    		if(answer.equals("yes") ){
-	    			if(count<=chara.count()){
+	    			if(count==chara.count()){
 	            		count++;	
 	    			}
 
-	    			if(chara.count()==count){
+	    			if(chara.count()+1==count){
 	        			chara.info();	
 
-	            		if(count==5){
+	            		if(count==6){
 	            			goON=false;
 	            			break;
 	            		}
 	            		showPrompt();
 	    			}
-	    			else if(count>chara.count()){
+	    			else if(count>chara.count()+1){
             			chara.reply();
             			showPrompt();
             		}
