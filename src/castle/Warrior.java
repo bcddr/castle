@@ -2,8 +2,9 @@ package castle;
 
 public class Warrior extends Character {
 
-	public Warrior(Game game){
+	public Warrior(Game game) {
 		super(game);
+		// TODO Auto-generated constructor stub
 	}
 	@Override
 	public void print(){

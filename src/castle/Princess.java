@@ -2,8 +2,10 @@ package castle;
 
 public class Princess extends Character {
 
-	public Princess(Game game){
+
+	public Princess(Game game) {
 		super(game);
+		// TODO Auto-generated constructor stub
 	}
 	@Override
 	public void print(){

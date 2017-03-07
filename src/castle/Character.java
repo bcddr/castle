@@ -2,9 +2,8 @@ package castle;
 
 public class Character{
 	protected Game game;
-	
 	public Character(Game game){
-		this.game =game;
+		this.game=game;
 	}
 	public void print(){
 //		System.out.println("");
