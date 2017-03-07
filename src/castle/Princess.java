@@ -9,7 +9,7 @@ public class Princess extends Character {
 	}
 	@Override
 	public void print(){
-		System.out.println("公主得了一种怪病，其实龙骨不一定能治好，你还要娶公主吗？");
+		System.out.println("公主：龙骨只是传说，我的病不一定会好，你还是愿意和我在一起吗？");
 		System.out.println("请选择“yes”或者“no”继续游戏。");
 	}
 	public void info(){
@@ -20,6 +20,6 @@ public class Princess extends Character {
 		return 5;
 	}
 	public void lieReply(){
-		System.out.println("尽管你找到了这里，但我是不会喜欢一个骗子的，你还是回去吧！");
+		System.out.println("公主：尽管你找到了这里，但我是不会喜欢一个骗子的，你还是回去吧！");
 	}
 }
